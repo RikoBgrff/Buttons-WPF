@@ -1,0 +1,23 @@
+﻿<Window x:Class="Buttons_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Buttons_WPF"
+        mc:Ignorable="d"
+       Icon="ButtonIcon.ico" Title="Randomly Colorized Buttons" Height="500" Width="720" WindowStartupLocation="CenterScreen" MinHeight="500" MinWidth="720" MaxHeight="1080" MaxWidth="1920">
+    <Window.Background>
+        <ImageBrush ImageSource="photo.png"/>
+    </Window.Background>
+    <WrapPanel Name="Panel" Orientation="Horizontal" RenderTransformOrigin="0.505,0.52">
+        <WrapPanel.Background>
+            <ImageBrush ImageSource="Japan_Rain_datsunStreet_448567.jpg"/>
+        </WrapPanel.Background >
+        <Button x:Name="Btn1" Content="1" Background="#FFACF39D" Width="150" Height="150" Margin="40" PreviewMouseDown="Button_OnMouseDown"/>
+        <Button x:Name="Btn2" Content="2" Background="#FFE85F5C" Width="150" Height="150" Margin="40" PreviewMouseDown="Button_OnMouseDown"/>
+        <Button x:Name="Btn3" Content="3" Background="#FFD4C5E2" Width="150" Height="150" Margin="40" PreviewMouseDown="Button_OnMouseDown"/>
+        <Button x:Name="Btn4" Content="4" Background="#FFDC758F" Width="150" Height="150" Margin="40" PreviewMouseDown="Button_OnMouseDown"/>
+        <Button x:Name="Btn5" Content="5" Background="#FFFFB627" Width="150" Height="150" Margin="40" PreviewMouseDown="Button_OnMouseDown"/>
+        <Button x:Name="Btn6" Content="6" Background="#FF84E6F8" Width="150" Height="150" Margin="40" PreviewMouseDown="Button_OnMouseDown"/>
+    </WrapPanel>
+</Window>
